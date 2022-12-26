@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Management Web Page</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .tatile {
+        text-align: center;
+      }
+      .main-form {
+        display: flex;
+        width: 300px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="taitle"><h1>Project Management</h1></div>
+    <div class="main-form">
+      <form action="noaction.php">
+        <label for="project-name">Project Name: </label>
+        <input
+          type="text"
+          id="project-name"
+          name="project-name"
+          class="col-space"
+        />
+        <label for="dr-menu">Assigned To: </label>
+
+        <select name="dr-menu" id="dr-menu" class="col-space">
+          <option value="1" class="opts">A</option>
+          <option value="2" class="opts">B</option>
+          <option value="3" class="opts">C</option>
+        </select>
+
+        <label for="sdate">Start Date: </label>
+        <input type="date" name="sdate" id="sdate" class="col-space" />
+        <label for="edate" id="endate">End Date: </label>
+        <input type="date" name="edate" class="col-space" />
+
+        <label for="pr-radio">Priority: </label>
+        <input
+          type="radio"
+          id="rd1"
+          value="High"
+          name="rd-group"
+          class="col-space"
+        />
+        <label for="rd1">High</label>
+        <input
+          type="radio"
+          id="rd2"
+          class="col-space"
+          value="Average"
+          name="rd-group"
+        />
+        <label for="rd2"> Average</label>
+        <input
+          type="radio"
+          id="rd3"
+          class="col-space"
+          value="Low"
+          name="rd-group"
+        />
+        <label for="rd3"> Low</label>
+
+        <label for="text-desc">Discription: </label>
+        <textarea
+          name="text-desc"
+          class="col-space"
+          id="text-desc"
+          textarea
+        ></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
